@@ -1,0 +1,266 @@
+[
+  {
+    "review_id": "e538ba67c8f04c2bb9ae650576ec9e008ea6ab629a613db962aa4ce6178e706e",
+    "text": "The atmosphere is modern and hip, while maintaining a touch of coziness.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "5a645dd1136970c61b2b678bed688af92724415e82c0fb6a9c55b16fc2ac2381",
+    "text": "The cr\u00eape was delicate and thin and moist.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "a6699c23790a41f02db9044b47b3489e746714bd14cccb3da40e12b2abb7d2a9",
+    "text": "not even a \"hello, we will be right with you.\"",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "fc1869dec1eef752f757e5ae5a8371283e2ab7bee5a4e44f195cc885782ee226",
+    "text": "Tonight I had the Elk Filet special...and it sucked.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "616563038d11686a3f4b7a727d4e35c5d661cf3d1ea7cecdc1c001a66d2eba0a",
+    "text": "The Heart Attack Grill in downtown Vegas is an absolutely flat-lined excuse for a restaurant.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "565884b175da02dce02e11a9df9ee9b2f18ab6ae648b084b2ee49656d183540b",
+    "text": "On three different occasions I asked for well done or medium well, and all three times I got the bloodiest piece of meat on my plate.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "dc9db04215a6dae3d7e55d6558eba9875ba90ab1cc566eb4645fc825fad84ea2",
+    "text": "I got to enjoy the seafood salad, with a fabulous vinegrette.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "d80f0053631e5a77631aff2a6a79f4bf5a1acf297c7420fa22670c2e0edb3331",
+    "text": "The warm beer didn't help.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "663e0141a18e5ccd9d578367e2103bd81ba96e422e81973f3fa32020bda25f91",
+    "text": "We watched our waiter pay a lot more attention to other tables and ignore us.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "78f36663b170fcf8f96946f6db5186964c21aa16bf95a46544f57fd6f238bf7a",
+    "text": "Best tater tots in the southwest.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "c1815ecef622eb0a0edaba70cac259d30da9db6c4eafb3afee889d59b2818cfc",
+    "text": "Nice, spicy and tender.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "ba3ed87ec16bf14f9c355d9293c8c83cddf72db6cabd9af6be11a883fea5744f",
+    "text": "I waited and waited.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "74f1572c29a0f7134f7db8c0f77756490656809b5633fdda3c5cf2e069cecd32",
+    "text": "I think food should have flavor and texture and both were lacking.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "40150c896b96434f6731252be546ce6fcd184abef45494b10d951dbe0e417ec6",
+    "text": "This place is not worth your time, let alone Vegas.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "3a08fe871a66f86038c8a611421bbe6ae3e4be2d380387e6c8131094bfe944eb",
+    "text": "What I really like there is the crepe station.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "ff56a5ecf0460cb6b4db79434c82f86c8a563dadac6dc7ce056d9498a17f007a",
+    "text": "After the disappointing dinner we went elsewhere for dessert.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "cdcb38c9a384a06f613c3eb199db2f9a289985ca6d0353ad768c238d96ea293c",
+    "text": "What a mistake that was!",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "4c6f7ab08de64f126d4f2eac9f1d02ad742be3eaf7fecbf7dbf0a74174eff3b0",
+    "text": "(The bathroom is just next door and very nice.)",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "4b95fe468c6a1bdc7cd14e7fc9ca1bb8cf1604654669b84c7e3c601b0fc32eb7",
+    "text": "Appetite instantly gone.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "2cdde79a061589e482731a0ffdc8144ad74700c03dd2a3496876bfed60a0bad0",
+    "text": "I'll definitely be in soon again.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "949f84cf60c80e918acc3e4f1d3dc3a1bd170833549bb8b0d9d28b4e21217031",
+    "text": "Overall I wasn't very impressed with Noca.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "91d80b78888397ca688d2d7ba24cf6e7485ee4528902ade646afb4b5291e684d",
+    "text": "We enjoy their pizza and brunch.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "c40b93b59e1206c119ac66453fdf910a38acf9ef9037425d75a22ed548db1d5b",
+    "text": "The croutons also taste homemade which is an extra plus.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "4db4a3ecb0841b37f016021b95cbe32e50f5b5613da8aab526789f861b79a201",
+    "text": "Fantastic service here.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "9a3f15830fce0d2e07ad7e37b5815563fb23cfbac6cdf8c927bbe6db1153e9e6",
+    "text": "The nachos are a MUST HAVE!",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "d805713731b10874ffe3466b81d4d95c40687c575b3c193b02db94750e629501",
+    "text": "I'm not impressed with the concept or the food.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "05f1ef80f60b0a62fa479acc4cd746332773aac8640bbbcbb2bae9f2b1f34076",
+    "text": "Highly recommended.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "4372ea87a366889b04569f6ed3db6fd20886290209c05266544360d8add86c55",
+    "text": "Crust is not good.",
+    "reference": "negative",
+    "prediction": "positive"
+  },
+  {
+    "review_id": "ef7caf3f570750ca01c8f5f493f9f9fe480e98808ceef8dcc4bc5c81505b355e",
+    "text": "My first visit to Hiro was a delight!",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "e0f7b3780771198adc445d5fcd520346b9f10b03f6aa006831be613bc8d81f6c",
+    "text": "There is nothing privileged about working/eating there.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "ccf5e8084bfecb96654cb9cfe1be79074a4b828630950551b49ab9df12a313df",
+    "text": "I just wanted to leave.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "db9268db5f2d6cf19d9df913690bdd57444fd2d6c320788926e0d8c5378a09a8",
+    "text": "I'd rather eat airline food, seriously.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "fe9e7d7863afa8a9f664abb963f686953412ec65d7b5abc398ec6b6b36ddc02b",
+    "text": "We walked away stuffed and happy about our first Vegas buffet experience.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "78c451fec5de3c93e7831bcbf80814ea8068b9325db4a5cb7f29b3c739e87082",
+    "text": "Same evening, him and I are both drastically sick.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "30411528f4e287946c7c5a0b2834bfebd4b2b83eae353bed80001fe8aebbb1ba",
+    "text": "Very, very sad.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "bd957a9c53b704526f274ec96b06640932b81442f117564450bee42e1713be74",
+    "text": "The buffet is small and all the food they offered was BLAND.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "9252205216e99704488b54c887beb1c825b5e20e8a7bbd7c41e2120ccefb0bf8",
+    "text": "Their daily specials are always a hit with my group.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "5826ea1b32a17a15ce5d21a0a4cb20668879c651a5da90ca28ff2d666aaa12c7",
+    "text": "Every time I eat here, I see caring teamwork to a professional degree.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "fa9fab0c7f89e092c5e482cf7cc211bb5b094b956449b38f636fc43f4bff13d7",
+    "text": "This place has a lot of promise but fails to deliver.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "bbd98e2951a82b67bdf42c29c0b96304d5f401f9f0004fea8afa4b9ba1770a4d",
+    "text": "Best tacos in town by far!!",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "c0458af43dc792881abe50e54e9df73af8c6f4a127a18de9fa47f838c9e219ec",
+    "text": "The grilled chicken was so tender and yellow from the saffron seasoning.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "1cee5c71a91ea3f27aa134c7e717345a3426409d1d1493ddcc805f3c41bf1efd",
+    "text": "Everything was gross.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "484dc7ac81c89d2a0672e867f4049c7961b0813c5f06e67e095762ac1c4306a4",
+    "text": "I checked out this place a couple years ago and was not impressed.",
+    "reference": "negative",
+    "prediction": "uncertain"
+  },
+  {
+    "review_id": "c02bb7c078283f10042213451b9199c7657bfcabb85befe3a57728d87b1e951d",
+    "text": "So they performed.",
+    "reference": "positive",
+    "prediction": "uncertain"
+  }
+]

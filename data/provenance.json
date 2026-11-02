@@ -1,0 +1,18 @@
+{
+  "dataset": "Sentiment Labelled Sentences",
+  "creator": "Dimitrios Kotzias",
+  "year": 2015,
+  "doi": "https://doi.org/10.24432/C57604",
+  "url": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "archive_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
+  "member": "sentiment labelled sentences/yelp_labelled.txt",
+  "seed": 42,
+  "transformations": "Yelp subset; exact text deduplication; seeded shuffle; 30 demo and 60 disjoint evaluation sentences; binary labels mapped to words. No dates/ratings invented.",
+  "files_sha256": {
+    "demo.csv": "b6f7b7da1a5d3c50e68521d5daf6f843396cfdb0b053d2d0c3f79b8d87f35525",
+    "evaluation.csv": "c8166939302ba51478341a751378bed7c3fa8435026213af43838e9ebdf8318a",
+    "human_review.csv": "6eff235cfc2b7508694fb80e0f6140be779604fc49e841a873087f233e6f0499"
+  }
+}

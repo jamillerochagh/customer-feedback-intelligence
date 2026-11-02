@@ -1,0 +1,61 @@
+review_id,text,source_line,sentiment_gold
+e538ba67c8f04c2bb9ae650576ec9e008ea6ab629a613db962aa4ce6178e706e,"The atmosphere is modern and hip, while maintaining a touch of coziness.",178,positive
+5a645dd1136970c61b2b678bed688af92724415e82c0fb6a9c55b16fc2ac2381,The crêpe was delicate and thin and moist.,824,positive
+a61c222d326521ede3c13c15f58ba58d829a29a7daba31175ee2610a8b6691a9,"Third, the cheese on my friend's burger was cold.",476,negative
+c1abf6358fd0583292f8bb404b4f206188e95c3df9ac7c2006e1785a45308a01,"On the good side, the staff was genuinely pleasant and enthusiastic - a real treat.",356,positive
+0cfdfcc602cdfcdcb59a1d60788400a62ab9a87db232440ec76eb1e709096a7c,The best place to go for a tasty bowl of Pho!,196,positive
+591969b1cdd9659f411726e34b4417b4382a13bc198846805b67b26517491e44,Terrible management.,535,negative
+a6699c23790a41f02db9044b47b3489e746714bd14cccb3da40e12b2abb7d2a9,"not even a ""hello, we will be right with you.""",548,negative
+fc1869dec1eef752f757e5ae5a8371283e2ab7bee5a4e44f195cc885782ee226,Tonight I had the Elk Filet special...and it sucked.,718,negative
+3e183d9e18d5ef1229b7283e7866530b3b9d265039e9ed74d8568799db554c88,"They have horrible attitudes towards customers, and talk down to each one when customers don't enjoy their food.",54,negative
+35cbb99f9973e6be8a5d2ab33b888d86ee8a97dc4418a7a5edd36d174fb8061e,Those burgers were amazing.,525,positive
+616563038d11686a3f4b7a727d4e35c5d661cf3d1ea7cecdc1c001a66d2eba0a,The Heart Attack Grill in downtown Vegas is an absolutely flat-lined excuse for a restaurant.,57,negative
+565884b175da02dce02e11a9df9ee9b2f18ab6ae648b084b2ee49656d183540b,"On three different occasions I asked for well done or medium well, and all three times I got the bloodiest piece of meat on my plate.",885,negative
+43f9214cb5f079d40f258f7ac4bdcd7b0d7b1dc45a03e9688c31d0e8c7988bd6,My sashimi was poor quality being soggy and tasteless.,771,negative
+cc11d6cb86ca56613716af82b80a927b12ee8fc22b884bcdf27bf5b7e5d9c9a1,Service was slow and not attentive.,680,negative
+dc9db04215a6dae3d7e55d6558eba9875ba90ab1cc566eb4645fc825fad84ea2,"I got to enjoy the seafood salad, with a fabulous vinegrette.",751,positive
+d80f0053631e5a77631aff2a6a79f4bf5a1acf297c7420fa22670c2e0edb3331,The warm beer didn't help.,203,negative
+a45291f8ffb3cb7423666eb05cf6b01ea5d0fe9f6f672b604df8125eddcd37eb,"I had heard good things about this place, but it exceeding every hope I could have dreamed of.",201,positive
+663e0141a18e5ccd9d578367e2103bd81ba96e422e81973f3fa32020bda25f91,We watched our waiter pay a lot more attention to other tables and ignore us.,150,negative
+78f36663b170fcf8f96946f6db5186964c21aa16bf95a46544f57fd6f238bf7a,Best tater tots in the southwest.,459,positive
+c1815ecef622eb0a0edaba70cac259d30da9db6c4eafb3afee889d59b2818cfc,"Nice, spicy and tender.",114,positive
+ba3ed87ec16bf14f9c355d9293c8c83cddf72db6cabd9af6be11a883fea5744f,I waited and waited.,283,negative
+74f1572c29a0f7134f7db8c0f77756490656809b5633fdda3c5cf2e069cecd32,I think food should have flavor and texture and both were lacking.,996,negative
+40150c896b96434f6731252be546ce6fcd184abef45494b10d951dbe0e417ec6,"This place is not worth your time, let alone Vegas.",19,negative
+3a08fe871a66f86038c8a611421bbe6ae3e4be2d380387e6c8131094bfe944eb,What I really like there is the crepe station.,189,positive
+ff56a5ecf0460cb6b4db79434c82f86c8a563dadac6dc7ce056d9498a17f007a,After the disappointing dinner we went elsewhere for dessert.,907,negative
+cdcb38c9a384a06f613c3eb199db2f9a289985ca6d0353ad768c238d96ea293c,What a mistake that was!,425,negative
+4c6f7ab08de64f126d4f2eac9f1d02ad742be3eaf7fecbf7dbf0a74174eff3b0,(The bathroom is just next door and very nice.),360,positive
+4b95fe468c6a1bdc7cd14e7fc9ca1bb8cf1604654669b84c7e3c601b0fc32eb7,Appetite instantly gone.,997,negative
+2cdde79a061589e482731a0ffdc8144ad74700c03dd2a3496876bfed60a0bad0,I'll definitely be in soon again.,407,positive
+949f84cf60c80e918acc3e4f1d3dc3a1bd170833549bb8b0d9d28b4e21217031,Overall I wasn't very impressed with Noca.,507,negative
+61b12b3a0aa769c710885c317b4e542119dc2795008d6b267ee4e05b4030a01f,"The chicken I got was definitely reheated and was only ok, the wedges were cold and soggy.",613,negative
+91d80b78888397ca688d2d7ba24cf6e7485ee4528902ade646afb4b5291e684d,We enjoy their pizza and brunch.,477,positive
+c40b93b59e1206c119ac66453fdf910a38acf9ef9037425d75a22ed548db1d5b,The croutons also taste homemade which is an extra plus.,596,positive
+4db4a3ecb0841b37f016021b95cbe32e50f5b5613da8aab526789f861b79a201,Fantastic service here.,257,positive
+9a3f15830fce0d2e07ad7e37b5815563fb23cfbac6cdf8c927bbe6db1153e9e6,The nachos are a MUST HAVE!,786,positive
+e0e7d29c4604b71360f925802290d2b5cd09b57f3f9a9e934f2b1ef42ae6322f,This is the place where I first had pho and it was amazing!!,230,positive
+d805713731b10874ffe3466b81d4d95c40687c575b3c193b02db94750e629501,I'm not impressed with the concept or the food.,915,negative
+05f1ef80f60b0a62fa479acc4cd746332773aac8640bbbcbb2bae9f2b1f34076,Highly recommended.,17,positive
+4478ecdb8e7a80fe0221952769870b9b807b03011daef948d3a87cb44379546e,"Love this place, hits the spot when I want something healthy but not lacking in quantity or flavor.",185,positive
+4372ea87a366889b04569f6ed3db6fd20886290209c05266544360d8add86c55,Crust is not good.,2,negative
+ef7caf3f570750ca01c8f5f493f9f9fe480e98808ceef8dcc4bc5c81505b355e,My first visit to Hiro was a delight!,39,positive
+e0f7b3780771198adc445d5fcd520346b9f10b03f6aa006831be613bc8d81f6c,There is nothing privileged about working/eating there.,252,negative
+ccf5e8084bfecb96654cb9cfe1be79074a4b828630950551b49ab9df12a313df,I just wanted to leave.,608,negative
+fc6c23e09bef9c72f76887346cd52464040e73c8d7865b1822fee76c985899aa,"The first time I ever came here I had an amazing experience, I still tell people how awesome the duck was.",810,positive
+db9268db5f2d6cf19d9df913690bdd57444fd2d6c320788926e0d8c5378a09a8,"I'd rather eat airline food, seriously.",502,negative
+3cb81198d63971e3b61ddfcf8c0f4e5d14f73c56bc7ed84a6300316f394a876a,It's a great place and I highly recommend it.,679,positive
+fe9e7d7863afa8a9f664abb963f686953412ec65d7b5abc398ec6b6b36ddc02b,We walked away stuffed and happy about our first Vegas buffet experience.,394,positive
+78c451fec5de3c93e7831bcbf80814ea8068b9325db4a5cb7f29b3c739e87082,"Same evening, him and I are both drastically sick.",633,negative
+8a25af093c56eaed05f935377e2be5821cb37426ec17d16e2abfb480b2953f22,2 times - Very Bad Customer Service !,77,negative
+30411528f4e287946c7c5a0b2834bfebd4b2b83eae353bed80001fe8aebbb1ba,"Very, very sad.",912,negative
+bd957a9c53b704526f274ec96b06640932b81442f117564450bee42e1713be74,The buffet is small and all the food they offered was BLAND.,361,negative
+9252205216e99704488b54c887beb1c825b5e20e8a7bbd7c41e2120ccefb0bf8,Their daily specials are always a hit with my group.,495,positive
+5826ea1b32a17a15ce5d21a0a4cb20668879c651a5da90ca28ff2d666aaa12c7,"Every time I eat here, I see caring teamwork to a professional degree.",923,positive
+90a3c9b4d31c62dced9307682ab3cf9a033f71f4b4d70631d4b1ee915e32c4fa,The pizza selections are good.,897,positive
+fa9fab0c7f89e092c5e482cf7cc211bb5b094b956449b38f636fc43f4bff13d7,This place has a lot of promise but fails to deliver.,645,negative
+bbd98e2951a82b67bdf42c29c0b96304d5f401f9f0004fea8afa4b9ba1770a4d,Best tacos in town by far!!,376,positive
+c0458af43dc792881abe50e54e9df73af8c6f4a127a18de9fa47f838c9e219ec,The grilled chicken was so tender and yellow from the saffron seasoning.,623,positive
+1cee5c71a91ea3f27aa134c7e717345a3426409d1d1493ddcc805f3c41bf1efd,Everything was gross.,334,negative
+484dc7ac81c89d2a0672e867f4049c7961b0813c5f06e67e095762ac1c4306a4,I checked out this place a couple years ago and was not impressed.,612,negative
+c02bb7c078283f10042213451b9199c7657bfcabb85befe3a57728d87b1e951d,So they performed.,25,positive
