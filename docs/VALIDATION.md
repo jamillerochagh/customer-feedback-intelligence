@@ -1,4 +1,4 @@
-# Local validation record
+# Initial local validation record
 
 Date: November 2, 2026 (America/Sao_Paulo).
 
@@ -11,4 +11,4 @@ Environment: Python 3.9.6, macOS ARM64, isolated `.venv`, exact installed packag
 
 Provider tests use `httpx.MockTransport` and a fake key. They verify the adapter contract and local failure handling, not real endpoint compatibility, model behavior or prompt-injection resistance. No API key was configured; no actual LLM calls were made. Theme/severity reference annotation is pending.
 
-The application and data remain local. Nothing was pushed, deployed, shared or published. The server binds only to the loopback interface and Streamlit usage telemetry is disabled.
+These observations describe the initial local MVP validation, before the first GitHub upload. The source was subsequently pushed to a private GitHub repository. For the later review before public release, see [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md). The application itself still runs locally: the server binds only to the loopback interface and Streamlit usage telemetry is disabled.

@@ -12,7 +12,7 @@ from cfi.ingest import map_rows, read_csv
 from cfi.models import AnalysisConfig, Classification, SENTIMENTS, THEMES
 from cfi.pipeline import analyze
 from cfi.providers import Baseline, OpenAIProvider
-from cfi.reporting import json_export, priorities, safe_csv
+from cfi.reporting import json_export, priorities, safe_csv, spreadsheet_safe_frame
 from cfi.store import Store
 
 ROOT = Path(__file__).parent
@@ -63,11 +63,11 @@ try:
 except ValueError as exc:
     st.error(str(exc))
     st.stop()
-st.dataframe(frame.head(5), hide_index=True, width='stretch')
+st.dataframe(spreadsheet_safe_frame(frame.head(5)), hide_index=True, width='stretch')
 st.caption(f'{len(rows)} unique valid reviews · {len(rejected)} excluded rows. Exact duplicate texts count once.')
 if rejected:
     with st.expander('Excluded rows and reasons'):
-        st.dataframe(rejected, hide_index=True)
+        st.dataframe(spreadsheet_safe_frame(rejected), hide_index=True)
         st.download_button('Download ingestion report', safe_csv(rejected), 'ingestion_report.csv', 'text/csv')
 if not rows:
     st.stop()
@@ -117,7 +117,7 @@ if not successful.empty:
             filtered = filtered[(fd >= period[0]) & (fd <= period[1])]
     else:
         st.caption('No dates mapped: time trends are unavailable.')
-    st.dataframe(filtered[['review_id', 'theme', 'sentiment', 'severity', 'issue', 'evidence', 'needs_review', 'reviewed']],
+    st.dataframe(spreadsheet_safe_frame(filtered[['review_id', 'theme', 'sentiment', 'severity', 'issue', 'evidence', 'needs_review', 'reviewed']]),
                  hide_index=True, width='stretch')
     if not filtered.empty:
         rid = st.selectbox('Open original review', filtered.review_id.tolist(),
@@ -151,7 +151,7 @@ if not successful.empty:
     st.caption('Score = sum of reported severity per unique review. Severity is an allegation, not a verified fact. Frequency denominator: successful reviews in the current filters. Pending/failed reviews are excluded; results may be biased.')
     ranked = priorities(filtered.to_dict('records'))
     if ranked:
-        st.dataframe(ranked, hide_index=True, width='stretch')
+        st.dataframe(spreadsheet_safe_frame(ranked), hide_index=True, width='stretch')
     else:
         st.info('No reported problems in this selection.')
 
@@ -165,7 +165,7 @@ c.download_button('Processing audit CSV', safe_csv(audit), 'processing_audit.csv
 with st.expander('Configuration and execution audit'):
     st.json(config.model_dump())
     st.caption('Audit covers this configuration across local datasets. Failed API requests may consume tokens without returning usage; recorded totals are lower bounds.')
-    st.dataframe(audit, hide_index=True, width='stretch')
+    st.dataframe(spreadsheet_safe_frame(audit), hide_index=True, width='stretch')
     input_tokens = sum(r['input_tokens'] or 0 for r in audit)
     output_tokens = sum(r['output_tokens'] or 0 for r in audit)
     st.write(f'Recorded input tokens: {input_tokens} · output tokens: {output_tokens}')

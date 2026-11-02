@@ -3,16 +3,21 @@ import json
 import pandas as pd
 
 
-def safe_csv(rows):
-    """Escape spreadsheet formula prefixes, including after whitespace; originals stay in JSON/DB."""
-    frame = pd.DataFrame(rows)
+def spreadsheet_safe_frame(rows):
+    """Protect both explicit CSV exports and Streamlit's built-in table downloads."""
+    frame = pd.DataFrame(rows).copy()
     def escape(value):
         if isinstance(value, str) and value.lstrip().startswith(('=', '+', '-', '@')):
             return "'" + value
         return value
     for col in frame.columns:
         frame[col] = frame[col].map(escape)
-    return frame.to_csv(index=False).encode('utf-8')
+    return frame
+
+
+def safe_csv(rows):
+    """Escape formula prefixes; original values remain available in JSON and SQLite."""
+    return spreadsheet_safe_frame(rows).to_csv(index=False).encode('utf-8')
 
 
 def priorities(rows):

@@ -1,14 +1,34 @@
 # Customer Feedback Intelligence
 
-A local portfolio application that turns customer review CSVs into evidence-linked classifications and explicit investigation priorities. Built by Jamille Rocha Ghazaleh to demonstrate applied AI engineering: ingestion, structured extraction, validation, failure recovery, evaluation, and human review.
+A tool for answering three questions about customer feedback: **What are customers talking about? Which reported problems deserve investigation? What evidence supports each finding?**
 
-**Current status:** working local MVP with a real OpenAI adapter and an offline keyword baseline. No real LLM quality, latency, token usage, or commercial impact is claimed. Theme and severity evaluation remains pending independent human annotation. Nothing is deployed or published.
+Upload a review CSV, classify topics and sentiment, inspect the original comments, correct classifications, and export the analysis. Reported problems are ranked with an explicit frequency-and-severity heuristic.
+
+Built by **Jamille Rocha Ghazaleh** with Python, Streamlit, Pydantic, pandas, SQLite, and an OpenAI API adapter.
+
+| Available now | Still pending |
+|---|---|
+| Complete local CSV-to-export workflow | Real LLM execution and comparison with the baseline |
+| Offline keyword baseline and recorded evaluation | Independent human theme/severity labels |
+| Structured LLM adapter, validation, retries and cache | Deployment and production validation |
+| Human corrections with preserved machine outputs | Business impact measurement |
+
+**Try it without an API key:** the bundled public sample runs with a clearly labeled keyword baseline. The OpenAI integration is implemented and tested with mocked responses; real model quality, latency and costs have not been measured. No application is publicly hosted.
+
+<details>
+<summary>Screenshot: local baseline run, 30 reviews processed</summary>
+
+![Local keyword baseline run; not LLM output](docs/screenshots/local-baseline.png)
+
+</details>
 
 ## Run locally
 
-Python 3.9–3.12 recommended. Development and validation used Python 3.9.6 on macOS ARM64.
+Development and validation used Python 3.9.6 on macOS ARM64. The version lock records that environment; other Python/OS combinations have not yet been validated.
 
 ```bash
+git clone https://github.com/jamillerochagh/customer-feedback-intelligence.git
+cd customer-feedback-intelligence
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
@@ -71,13 +91,13 @@ Suggested actions are deliberately labeled **hypotheses**: inspect the cases bef
 - Each attempt records status, safe error code, latency, returned model, and available token counts. One failed row does not stop the batch. Process interruption may leave an attempt without a final result; a rerun handles that row again.
 - Review text is JSON-encoded in a user message; the versioned system prompt treats it as untrusted data. No tools, code execution, retrieved instructions, or automatic actions are available to the classifier. This reduces consequences of prompt injection but cannot guarantee classification resistance. Malicious text still needs adversarial real-model evaluation.
 - Secrets come from environment variables and are never stored in the configuration/audit. Raw API errors are not displayed or persisted. The request sets `store=false`; consult provider policies for broader retention terms.
-- CSV exports escape spreadsheet formula prefixes; JSON and SQLite preserve exact text. Uploaded content is displayed as text/table data, never rendered as HTML.
+- CSV exports and displayed tables (including their built-in CSV downloads) escape spreadsheet formula prefixes. The original-review view, JSON and SQLite preserve exact text. Uploaded content is displayed as text/table data, never rendered as HTML.
 
 Recorded token totals exclude usage not returned by failed/invalid requests, and are lower bounds. Optional `CFI_INPUT_PRICE` and `CFI_OUTPUT_PRICE` (USD per million tokens) enable an estimate from operator-verified prices in the UI. No prices or dollar savings are invented. API timeouts may have been processed and billed by the provider even if retried.
 
 ## Data and evaluation
 
-Public data: [UCI Sentiment Labelled Sentences](https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences), Kotzias (2015), [DOI](https://doi.org/10.24432/C57604), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Based on *From Group to Individual Labels Using Deep Features*, Kotzias, Denil, de Freitas and Smyth, KDD 2015. We use restaurant-review sentences from its Yelp subset. Source labels are binary sentiment annotations, independent of this project's model. See [provenance and hashes](data/provenance.json).
+Public data: [UCI Sentiment Labelled Sentences](https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences), Kotzias (2015), [DOI](https://doi.org/10.24432/C57604), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Based on *From Group to Individual Labels Using Deep Features*, Kotzias, Denil, de Freitas and Smyth, KDD 2015. We use restaurant-review sentences from its Yelp subset. Source labels are binary sentiment annotations, independent of this project's model. See [data attribution](data/README.md) and [provenance and hashes](data/provenance.json).
 
 Transformations: preserve exact text, remove exact duplicates, shuffle with seed 42, separate 30 demo and 60 held-out evaluation sentences. No dates or ratings are fabricated. The original source is balanced toward clearly positive/negative sentences, so the sample is not representative of natural feedback, Portuguese, neutral/mixed sentiment, delivery platforms, or iFood. It is not affiliated with iFood. No source sentiment labels are sent to the provider.
 
@@ -90,7 +110,7 @@ python -m scripts.evaluate --engine openai --output local/llm-evaluation
 python -m scripts.evaluate --human-labels local/human_review_completed.csv
 ```
 
-The recorded baseline run on 60 held-out sentences achieved **26.7% accuracy**, **0.415 binary macro-F1**, and **71.7% abstention** (43/60 uncertain; 0 processing failures). Its weakness is visible and intentional: it is a frozen minimal comparator, not evidence that an LLM will perform better. These values come from `examples/baseline-evaluation/report.json` and must not be attributed to an LLM.
+The recorded baseline run on 60 held-out sentences achieved **26.7% accuracy**, **0.415 binary macro-F1**, and **71.7% abstention** (43/60 uncertain; 0 processing failures). This exposes the limitations of the minimal keyword rules; it is not evidence that an LLM will perform better. These values come from `examples/baseline-evaluation/report.json` and must not be attributed to an LLM.
 
 Evaluation stores raw machine predictions and never applies UI corrections. It reports accuracy, binary macro-F1, per-class precision/recall/F1, confusion counts, abstention/failure rates and error examples. Uncertain, mixed, neutral and failed predictions count as misses against binary references. Abstention is not silently discarded. Theme/severity metrics are emitted only for independently reviewed rows, with coverage and label-file hash; they remain pending otherwise. Latency statistics cover recorded attempts in the evaluation database, including previous cached runs, and exclude backoff/UI overhead. They are not deployment benchmarks.
 

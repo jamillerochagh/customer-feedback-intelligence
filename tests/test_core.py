@@ -8,7 +8,7 @@ from cfi.ingest import map_rows, read_csv
 from cfi.models import AnalysisConfig, Classification, review_id
 from cfi.pipeline import analyze
 from cfi.providers import Baseline, OpenAIProvider, ProviderError, ProviderResult, classify_with_retry
-from cfi.reporting import priorities, safe_csv
+from cfi.reporting import priorities, safe_csv, spreadsheet_safe_frame
 from cfi.store import Store
 from scripts.evaluate import classification_metrics
 
@@ -161,6 +161,15 @@ def test_csv_injection_and_priorities():
             {'status': 'pending', 'review_id': 'c'}]
     p = priorities(rows)[0]
     assert p['priority_score'] == 2 and p['share_of_analyzed'] == 0.5 and p['evidence_ids'] == 'a'
+
+
+def test_native_table_downloads_are_safe_without_changing_originals():
+    original = pd.DataFrame({'text': ['=HYPERLINK("https://example.com")', ' \t@SUM(A1)', 'normal'],
+                             'severity': [0, 1, 2]})
+    safe = spreadsheet_safe_frame(original)
+    assert safe.text.tolist() == ["'" + original.text[0], "'" + original.text[1], 'normal']
+    assert safe.severity.tolist() == [0, 1, 2]
+    assert original.text[0].startswith('=')
 
 
 def test_disjoint_evaluation_and_independent_labels():
